@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 import { FloatingNav } from "./components/ui/FloatingNav";
 import { navItems } from "./data";
 
@@ -11,6 +12,7 @@ function App() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <About />
+        <Projects />
       </div>
     </main>
   );

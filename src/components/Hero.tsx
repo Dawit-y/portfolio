@@ -28,23 +28,23 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex items-center justify-center gap-2 relative my-15 z-10">
-        <div className="flex-1 max-w-[50vw]">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 relative my-15 z-10">
+        <div className="flex-1 max-w-full  md:max-w-[50vw]  flex items-center justify-center">
           <img
             src={man}
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt="profile pic"
             className="rounded-full aspect-square object-cover"
           />
         </div>
-        <div className="max-w-[50vw] flex flex-1 flex-col items-center justify-center">
+        <div className="max-w-full  md:max-w-[50vw] mt-5 md:mt-0 flex flex-1 flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Dynamic Web Magic with Next.js
           </p>
           <TextGenerateEffect
             words="Hi, I'm Dawit Yimer Full Stack Developer"
-            className="text-center text-[10px] md:text-2xl lg:text-3xl"
+            className="text-center text-[10px] md:text-3xl lg:text-4xl"
           />
 
           <a href="#about">
