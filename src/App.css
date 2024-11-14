@@ -70,6 +70,9 @@
   * {
     @apply border-border !scroll-smooth;
   }
+  html {
+    --line-color: #e5e7eb;
+  }
   body {
     @apply bg-background text-foreground;
   }

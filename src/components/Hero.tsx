@@ -1,8 +1,10 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import { MdOutlineFileDownload } from "react-icons/md";
 import MagicButton from "../components/ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import man from "../assets/man.jpg";
+import cv from "../assets/cv.pdf";
 
 const Hero = () => {
   return (
@@ -17,6 +19,10 @@ const Hero = () => {
           fill="white"
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="white" />
+        {/* <Spotlight
+          className="top-40 right-10 md:-right-32 md:-top-20 h-screen"
+          fill="white"
+        /> */}
       </div>
       <div
         className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.06] bg-grid-black-100/[0.2]
@@ -39,21 +45,27 @@ const Hero = () => {
           />
         </div>
         <div className="max-w-full  md:max-w-[50vw] mt-5 md:mt-0 flex flex-1 flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </p>
           <TextGenerateEffect
-            words="Hi, I'm Dawit Yimer Full Stack Developer"
+            words="Hi, I'm Dawit Yimer. I'm a Full Stack Developer expertise in Django, MERN and NextJs"
             className="text-center text-[10px] md:text-3xl lg:text-4xl"
           />
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3">
+            <a href={cv}>
+              <MagicButton
+                title="Download CV"
+                icon={<MdOutlineFileDownload />}
+                position="right"
+              />
+            </a>
+            <a href="#contact">
+              <MagicButton
+                title="Let's contact"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

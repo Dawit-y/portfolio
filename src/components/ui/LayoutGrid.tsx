@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../lib/utils";
 
 type Card = {
@@ -13,6 +13,7 @@ type Card = {
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const handleClick = (card: Card) => {
     setLastSelected(selected);
@@ -27,7 +28,12 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   return (
     <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-6 relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, "min-h-72")}>
+        <div
+          key={i}
+          className={cn(card.className, "min-h-72")}
+          onMouseEnter={() => setHoveredIndex(i)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
@@ -41,6 +47,23 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             )}
             layoutId={`card-${card.id}`}
           >
+            <AnimatePresence>
+              {hoveredIndex === i && (
+                <motion.span
+                  className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.15 },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
             {selected?.id === card.id && <SelectedCard selected={selected} />}
             <ImageComponent card={card} isSelected={selected?.id === card.id} />
           </motion.div>
