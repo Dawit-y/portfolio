@@ -1,7 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -10,28 +8,28 @@ import "react-vertical-timeline-component/style.min.css";
 
 const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full Stack Developer | Intern",
+    location: "Anku ICT Consulting PLC",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: <LuGraduationCap />,
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Developed a web application using Node.js and React during my internship,gaining hands-on experience in full-stack development also played a key role in the development of a large-scale web application using Django,DRF and React.",
     icon: <CgWorkAlt />,
-    date: "2019 - 2021",
+    date: "June - Sep 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Full Stack Developer | Intern",
+    location: "Addis Way Technologies",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: <FaReact />,
-    date: "2021 - present",
+      "Played a pivotal role in the development of a large-scale web application using Laravel and React simultaneously engaged in learning and practicing data science, broadening skillsand knowledge to contribute to the interdisciplinary aspects of softwaredevelopment.",
+    icon: <CgWorkAlt />,
+    date: "June - Sep 2023",
+  },
+  {
+    title: "Full-Stack Developer | Freelaner",
+    location: "AfriWork, Upwork...",
+    description:
+      "I'm now a full-stack developer working as a freelancer. I'm open to full-time opportunities.",
+    icon: <CgWorkAlt />,
+    date: "Dec 2023 - present",
   },
 ];
 

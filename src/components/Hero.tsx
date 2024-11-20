@@ -3,7 +3,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import MagicButton from "../components/ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import man from "../assets/man.jpg";
+import man from "../assets/profile-pic.png";
 import cv from "../assets/cv.pdf";
 
 const Hero = () => {
