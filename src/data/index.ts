@@ -1,41 +1,11 @@
+import linkedin from "../assets/link.svg";
+import github from "../assets/git.svg";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
 ];
 
 export const workExperience = [
@@ -72,12 +42,12 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/src/assets/git.svg",
+    img: github,
     link: "https://github.com/Dawit-y",
   },
   {
     id: 3,
-    img: "/src/assets/link.svg",
+    img: linkedin,
     link: "https://www.linkedin.com/in/dawit-yimer-86414823a/",
   },
 ];
