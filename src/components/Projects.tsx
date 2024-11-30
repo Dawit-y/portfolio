@@ -38,7 +38,7 @@ const SkeletonOne = () => {
         with seamless task tracking and secure payments.
       </p>
       <a
-        href="https://vivo-afy522zd2-dawitys-projects.vercel.app/"
+        href="https://vivp.netlify.app/"
         className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none z-30"
       >
         <span
