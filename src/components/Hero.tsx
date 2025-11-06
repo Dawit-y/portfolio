@@ -4,7 +4,7 @@ import MagicButton from "../components/ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import man from "../assets/profile-pic.png";
-import cv from "../assets/cv.pdf";
+import cv from "../assets/Dawit-Yimer-cv.pdf";
 
 const Hero = () => {
 	return (
